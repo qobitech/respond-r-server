@@ -8,7 +8,7 @@ let stream = null
 
 app.use(
   cors({
-    origin: "http://localhost:8014",
+    origin: "*",
     credentials: true,
   })
 )
