@@ -2,6 +2,8 @@ const express = require("express")
 // const Stream = require("node-rtsp-stream")
 const ffmpeg = require("fluent-ffmpeg")
 const cors = require("cors")
+const pathToFfmpeg = require("ffmpeg-static")
+ffmpeg.setFfmpegPath(pathToFfmpeg)
 
 const app = express()
 const port = 3002
